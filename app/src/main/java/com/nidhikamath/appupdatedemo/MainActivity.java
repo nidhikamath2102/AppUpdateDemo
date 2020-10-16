@@ -124,14 +124,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void popupSnackbarForUpdateCompleted() {
-        Snackbar snackbar =
-                Snackbar.make(
-                        findViewById(R.id.appupdate),
-                        "An update has just been downloaded.",
-                        Snackbar.LENGTH_INDEFINITE);
+        Snackbar snackbar = Snackbar.make(findViewById(R.id.appupdate), "An update has just been downloaded.", Snackbar.LENGTH_INDEFINITE);
         snackbar.setAction("RESTART", view -> appUpdateManager.completeUpdate());
         snackbar.setActionTextColor(
-                getResources().getColor(R.color.black));
+                getResources().getColor(R.color.purple_200));
         snackbar.show();
     }
 
