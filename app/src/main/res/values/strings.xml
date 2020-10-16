@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AppUpdateDemo</string>
+    <string name="appupdate">App Update</string>
 </resources>
